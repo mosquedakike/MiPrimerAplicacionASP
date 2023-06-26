@@ -25,6 +25,7 @@ namespace MiPrimerAplicacionASP.Models
         public string email { get; set; }
         [Display(Name = "Fecha apertura")]
         [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Required]
         public DateTime fechaapertura { get; set; }
         public int bhabilitado { get; set; }

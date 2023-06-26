@@ -30,5 +30,21 @@ namespace MiPrimerAplicacionASP.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Agregar(SucursalCLS oSucursalCls)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(oSucursalCls);
+            }
+            else
+            {
+                using (var bd = new BDPasajeEntities())
+                {
+                    Sucursal oSucursal = new Sucursal();
+                    
+                }
+            }
+        }
     }
 }
