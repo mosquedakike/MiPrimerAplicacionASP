@@ -260,6 +260,7 @@
     <Content Include="Views\Cliente\Index.cshtml" />
     <Content Include="Views\Marca\Agregar.cshtml" />
     <Content Include="Views\Marca\Index.cshtml" />
+    <Content Include="Views\Sucursal\Agregar.cshtml" />
     <Content Include="Views\Sucursal\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

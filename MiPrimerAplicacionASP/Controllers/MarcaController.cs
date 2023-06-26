@@ -31,9 +31,26 @@ namespace MiPrimerAplicacionASP.Controllers
         }
         
         [HttpPost]
-        public ActionResult Agregar2()
+        public ActionResult Agregar(MarcaCLS oMarcaClS)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View(oMarcaClS);
+            }
+            else
+            {
+                using (var bd = new BDPasajeEntities())
+                {
+                    Marca oMarca = new Marca();
+                    oMarca.NOMBRE = oMarcaClS.nombre;
+                    oMarca.DESCRIPCION = oMarcaClS.descripcion;
+                    oMarca.BHABILITADO = 1;
+                    bd.Marca.Add(oMarca);
+                    bd.SaveChanges();
+                }
+            }
+
+            return RedirectToAction("Index");
         }
     }
 }
