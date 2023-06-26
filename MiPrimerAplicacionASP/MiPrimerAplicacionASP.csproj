@@ -258,6 +258,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Views\Cliente\Index.cshtml" />
+    <Content Include="Views\Marca\Agregar.cshtml" />
     <Content Include="Views\Marca\Index.cshtml" />
     <Content Include="Views\Sucursal\Index.cshtml" />
     <Content Include="Web.config" />

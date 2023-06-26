@@ -24,5 +24,16 @@ namespace MiPrimerAplicacionASP.Controllers
             }
             return View(listaMarca);
         }
+
+        public ActionResult Agregar()
+        {
+            return View();
+        }
+        
+        [HttpPost]
+        public ActionResult Agregar2()
+        {
+            return View();
+        }
     }
 }
